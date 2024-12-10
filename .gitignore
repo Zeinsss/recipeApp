@@ -1,0 +1,41 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+pubspec.lock
+build/
+
+# Android
+android/.gradle/
+android/local.properties
+android/app/*.iml
+
+# iOS
+ios/Pods/
+ios/Flutter/Flutter.framework/
+ios/Flutter/Generated.xcconfig
+ios/Runner.xcworkspace/
+
+# macOS
+macos/Pods/
+macos/Flutter/Flutter.framework/
+
+# Windows
+windows/Flutter/ephemeral/
+
+# Linux
+linux/Flutter/ephemeral/
+
+# Web
+web/build/
+
+# System and IDE
+*.DS_Store
+.vscode/
+.idea/
+
+# Sensitive Files
+.env
+.env.*
