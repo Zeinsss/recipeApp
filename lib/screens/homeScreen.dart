@@ -237,7 +237,7 @@ class RandomRecipesCard extends StatelessWidget {
                     top: Radius.circular(12),
                   ),
                   child: Image.asset(
-                    'assets/food/slow-cooked-lamb.jpg',
+                    recipe.imagePath,
                     height: 120,
                     width: double.infinity,
                     fit: BoxFit.cover,

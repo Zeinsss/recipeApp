@@ -27,7 +27,7 @@ List<Recipe> dummyRecipes = [
     prepTime: 15,
     cookTime: 30,
     servings: 4,
-    imagePath: "assets/food/spaghetti_bolognese.jpg",
+    imagePath: "assets/food/Spaghetti-Bolognese.jpg",
     isFavorite: true,
   ),
   Recipe(
@@ -52,7 +52,7 @@ List<Recipe> dummyRecipes = [
     prepTime: 10,
     cookTime: 15,
     servings: 2,
-    imagePath: "assets/food/spaghetti_bolognese.jpg",
+    imagePath: "assets/food/vegatable-stirfry.jpg",
     isFavorite: false,
   ),
   Recipe(
@@ -81,7 +81,7 @@ List<Recipe> dummyRecipes = [
     prepTime: 20,
     cookTime: 12,
     servings: 24,
-    imagePath: "assets/food/spaghetti_bolognese.jpg",
+    imagePath: "assets/food/chocolate-chip.jpg",
     isFavorite: true,
   ),
   Recipe(
@@ -107,7 +107,7 @@ List<Recipe> dummyRecipes = [
     prepTime: 10,
     cookTime: 0,
     servings: 2,
-    imagePath: "assets/food/spaghetti_bolognese.jpg",
+    imagePath: "assets/food/greek-salad.jpg",
     isFavorite: false,
   ),
   
