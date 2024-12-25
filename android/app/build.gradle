@@ -6,9 +6,9 @@ plugins {
 }
 
 android {
-    namespace = "com.example.recipe_app"
+    ndkVersion = "25.1.8937393"
+    namespace 'com.example.recipe_app'
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8

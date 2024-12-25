@@ -3,6 +3,8 @@ description: "A new Flutter project."
 publish_to: 'none'
 version: 0.1.0
 
+isar_version: &isar_version 3.1.0+1
+
 environment:
   sdk: ^3.5.3
 
@@ -14,11 +16,20 @@ dependencies:
   validators: ^3.0.0
   image_picker: ^0.8.4+4
   shared_preferences: ^2.0.6
+  path_provider: ^2.0.2
+  path: ^1.8.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
+  build_runner: any
+
+
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/food/
+    - assets/images/

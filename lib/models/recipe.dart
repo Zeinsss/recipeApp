@@ -1,7 +1,10 @@
+import 'dart:math';
+
 import 'package:recipe_app/models/ingredient.dart';
+import 'package:uuid/uuid.dart';
 
 class Recipe {
-  final int id;
+  late final String id;
   final String title;
   final List<Ingredient> ingredients;
   final List<String> steps;
@@ -9,45 +12,34 @@ class Recipe {
   final int prepTime;
   final int cookTime;
   final int servings;
-  final String? imagePath;
-  // final bool isFavorite;
-  // final String? cuisine;
-  // final int? difficultyLevel;
-  // final List<String>? tags;
+  final String imagePath;
+  bool isFavorite;
 
-  Recipe(
-    this.id,
-    this.title,
-    this.ingredients,
-    this.steps,
-    this.category,
-    this.prepTime,
-    this.cookTime,
-    this.servings,
-    this.imagePath,
-    // this.isFavorite = false,
-    // this.cuisine,
-    // this.difficultyLevel,
-    // this.tags,
-  );
+  Recipe({
+    required this.title,
+    required this.ingredients,
+    required this.steps,
+    required this.category,
+    required this.prepTime,
+    required this.cookTime,
+    required this.servings,
+    required this.imagePath,
+    this.isFavorite = false,
+  }) : id = const Uuid().v4();
 
-  void scaleRecipe() {
+  // Calculate total time
+  int get totalTime => prepTime + cookTime;
 
+  void addFavorite(List<int> favoriteRecipes, int index) {
+    if (favoriteRecipes.contains(index)) {
+        favoriteRecipes.remove(index);
+      } else {
+        favoriteRecipes.add(index);
+      }
   }
 
-  void createRecipe() {
-
-  }
-
-  void editRecipe() {
-
-  }
-
-  void deleteRecipe() {
-
-  }
-
-  void viewRecipe() {
-    
-  }
+  @override
+  String toString() {
+    return 'Recipe: $title, Category: $category, Prep Time: $prepTime mins, Cook Time: $cookTime mins, Servings: $servings, Favorite: $isFavorite, Ingredients Count: ${ingredients}';
+  } 
 }
